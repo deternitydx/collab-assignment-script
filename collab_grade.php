@@ -72,7 +72,7 @@ if ($handle = opendir($projDir)) {
             if (is_file("$userdir/{$entry}_submissionText.html")) {
                 $submission = file_get_contents("$userdir/{$entry}_submissionText.html");
                 if(($score += checkSubmissionFile($submission)) > 0)
-                    $comments .= "    In class submission found.\n";
+                    $comments .= "    Submission text found.\n";
             }
 
             $submitDir = "$userdir/Submission attachment(s)/";
